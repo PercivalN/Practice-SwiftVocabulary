@@ -12,7 +12,6 @@
 		E3EF7361247A5B6700BA2D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EF735F247A5B6700BA2D9E /* Main.storyboard */; };
 		E3EF7363247A5B6A00BA2D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EF7362247A5B6A00BA2D9E /* Assets.xcassets */; };
 		E3EF7366247A5B6A00BA2D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EF7364247A5B6A00BA2D9E /* LaunchScreen.storyboard */; };
-		E3EF7370247A62C500BA2D9E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3EF736F247A62C500BA2D9E /* Default-568h@2x.png */; };
 		E3EF7372247A635100BA2D9E /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EF7371247A635100BA2D9E /* WordsTableViewController.swift */; };
 		E3EF7374247A638500BA2D9E /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EF7373247A638500BA2D9E /* DefinitionViewController.swift */; };
 		E3EF7377247A682300BA2D9E /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EF7376247A682300BA2D9E /* VocabularyWord.swift */; };
@@ -26,7 +25,6 @@
 		E3EF7362247A5B6A00BA2D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3EF7365247A5B6A00BA2D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3EF7367247A5B6A00BA2D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3EF736F247A62C500BA2D9E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E3EF7371247A635100BA2D9E /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		E3EF7373247A638500BA2D9E /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		E3EF7376247A682300BA2D9E /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
@@ -46,7 +44,6 @@
 		E3EF734D247A5B6600BA2D9E = {
 			isa = PBXGroup;
 			children = (
-				E3EF736F247A62C500BA2D9E /* Default-568h@2x.png */,
 				E3EF7358247A5B6600BA2D9E /* Swift Vocabulary */,
 				E3EF7357247A5B6600BA2D9E /* Products */,
 			);
@@ -167,7 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3EF7366247A5B6A00BA2D9E /* LaunchScreen.storyboard in Resources */,
-				E3EF7370247A62C500BA2D9E /* Default-568h@2x.png in Resources */,
 				E3EF7363247A5B6A00BA2D9E /* Assets.xcassets in Resources */,
 				E3EF7361247A5B6700BA2D9E /* Main.storyboard in Resources */,
 			);

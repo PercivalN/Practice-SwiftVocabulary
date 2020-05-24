@@ -9,6 +9,11 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
+    
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Apple", definition: "The usually round, red or yellow, edible fruit of a small tree, Malus sylvestris, of the rose family."),
+                                        VocabularyWord(word: "Pear", definition: "The edible fruit, typically rounded but elongated and growing smaller toward the stem, of a tree, Pyrus communis, of the rose family."),
+                                        VocabularyWord(word: "Pomegranate", definition: "A chambered, many-seeded, globose fruit, having a tough, usually red rind and surmounted by a crown of calyx lobes, the edible portion consisting of pleasantly acid flesh developed from the outer seed coat."),
+                                        VocabularyWord(word: "Strawberry", definition: "The fruit of any stemless plant belonging to the genus Fragaria, of the rose family, consisting of an enlarged fleshy receptacle bearing achenes on its exterior.")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,24 +28,26 @@ class WordsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+       
+        return vocabWords.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
-        // Configure the cell...
+        let vocabWord = vocabWords[indexPath.row]
+        
+        cell.textLabel?.text = vocabWord.word
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -77,14 +84,28 @@ class WordsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        
+        // Check the segue identifier to know which view controller you are segueing to
+        if segue.identifier == "ShowDefinitionSegue" {
+        
+            // Get the new view controller using segue.destination.
+            guard let detailVC = segue.destination as? DefinitionViewController,
+                let indexPath = tableView.indexPathForSelectedRow else { return }
+            
+            // Get the information you want to pass to the new view controller
+                
+                let vocabWord = vocabWords[indexPath.row]
+                
+                // Pass the selected object to the new view controller.
+                detailVC.vocabWord = vocabWord
+    
+    
 
+}
+}
 }
