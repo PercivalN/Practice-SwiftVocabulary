@@ -57,13 +57,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvw-Jl-Kez">
-                                <rect key="frame" x="186" y="177" width="42" height="21"/>
+                                <rect key="frame" x="30" y="118" width="354" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z1N-VA-OUk">
-                                <rect key="frame" x="87" y="249" width="240" height="128"/>
+                                <rect key="frame" x="25" y="169" width="364" height="208"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -73,11 +73,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yvw-Jl-Kez" firstAttribute="top" secondItem="Npu-bk-FDx" secondAttribute="top" constant="89" id="4oL-jC-h3B"/>
-                            <constraint firstItem="z1N-VA-OUk" firstAttribute="leading" secondItem="Npu-bk-FDx" secondAttribute="leading" constant="87" id="FEu-JQ-AhL"/>
+                            <constraint firstItem="yvw-Jl-Kez" firstAttribute="top" secondItem="Npu-bk-FDx" secondAttribute="top" constant="30" id="4oL-jC-h3B"/>
+                            <constraint firstItem="Npu-bk-FDx" firstAttribute="trailing" secondItem="z1N-VA-OUk" secondAttribute="trailing" constant="25" id="8Kz-pB-hKR"/>
+                            <constraint firstItem="z1N-VA-OUk" firstAttribute="leading" secondItem="Npu-bk-FDx" secondAttribute="leading" constant="25" id="FEu-JQ-AhL"/>
+                            <constraint firstItem="yvw-Jl-Kez" firstAttribute="leading" secondItem="Npu-bk-FDx" secondAttribute="leading" constant="30" id="HG2-Dc-A3c"/>
                             <constraint firstItem="Npu-bk-FDx" firstAttribute="bottom" secondItem="z1N-VA-OUk" secondAttribute="bottom" constant="485" id="Iey-8j-QEf"/>
-                            <constraint firstItem="z1N-VA-OUk" firstAttribute="top" secondItem="yvw-Jl-Kez" secondAttribute="bottom" constant="51" id="L7I-XM-MkS"/>
+                            <constraint firstItem="z1N-VA-OUk" firstAttribute="top" secondItem="yvw-Jl-Kez" secondAttribute="bottom" constant="30" id="L7I-XM-MkS"/>
                             <constraint firstItem="yvw-Jl-Kez" firstAttribute="centerX" secondItem="z1N-VA-OUk" secondAttribute="centerX" id="ftY-ga-N2f"/>
+                            <constraint firstItem="Npu-bk-FDx" firstAttribute="trailing" secondItem="yvw-Jl-Kez" secondAttribute="trailing" constant="30" id="gPR-QR-vws"/>
                             <constraint firstItem="yvw-Jl-Kez" firstAttribute="centerX" secondItem="Kc9-vx-VgV" secondAttribute="centerX" id="zkp-Lr-TBz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Npu-bk-FDx"/>
