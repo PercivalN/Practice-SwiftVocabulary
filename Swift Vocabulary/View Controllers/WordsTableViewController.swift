@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class WordsTableViewController: UITableViewController {
     
     var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Apple", definition: "The usually round, red or yellow, edible fruit of a small tree, Malus sylvestris, of the rose family."),

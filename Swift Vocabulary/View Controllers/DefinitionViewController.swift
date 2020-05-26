@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class DefinitionViewController: UIViewController {
     
     var vocabWord: VocabularyWord? 
@@ -37,7 +38,7 @@ class DefinitionViewController: UIViewController {
         definitionTextView.font = UIFont(name: "BradleyHandITCTT-Bold", size: 12)
         
         addButton.setTitle("Add Word", for: .normal)
-        self.addButton.backgroundColor = .red
+        //self.addButton.backgroundColor = .red
     }
     
     func printAllFonts() {
